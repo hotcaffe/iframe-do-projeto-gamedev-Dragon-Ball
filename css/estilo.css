@@ -22,6 +22,7 @@ div{
     width: 100%;
     margin: auto;
     text-align: center;
+    color: white;
 }
 
 div#btn{
@@ -38,12 +39,15 @@ footer{
     color: whitesmoke;
     font-size: 14pt;
     line-height: 10px;
+    position: sticky;
 }
 a{
     color: rgba(100,150,255,1);
+    position: sticky;
 }
 
 input#prox{
+    cursor: pointer;
     transition: 1s;
     font-size: 30pt;
     background-color: rgba(0, 0, 0, 0.7);
@@ -63,6 +67,7 @@ input:hover#prox{
 }
 
 input#ant{
+    cursor: pointer;
     transition: 1s;
     font-size: 30pt;
     background-color: rgba(0, 0, 0, 0.7);
@@ -79,4 +84,12 @@ input:hover#ant{
     background-color: rgba(0, 0, 0, 0.5);
     width: 180px;
     clip-path: polygon(65% 0, 100% 25%, 100% 75%, 65% 100%, 0 100%, 0 0);
+}
+
+article{
+    text-align: justify;
+    width: 900px;
+    margin: auto;
+    line-height: 30px;
+    margin-top: 50px;
 }
