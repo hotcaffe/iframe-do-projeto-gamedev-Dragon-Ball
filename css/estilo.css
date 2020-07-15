@@ -3,7 +3,9 @@
 }
 
 body{
-    background-color: rgba(0,0,0,0.8)
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+    overflow: hidden;
 }
 #frame{
     width: 1036px;
@@ -13,15 +15,24 @@ body{
     margin: auto;
     margin-top: -150px;
     transform: scale(0.7);
+    overflow: hidden;
 }
 div{
     height: 780px;
     width: 100%;
     margin: auto;
-    margin-top: 50px;
     text-align: center;
-
 }
+
+div#btn{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    margin-left: -8px;
+}
+
 footer{
     text-align: center;
     color: whitesmoke;
@@ -30,4 +41,42 @@ footer{
 }
 a{
     color: rgba(100,150,255,1);
+}
+
+input#prox{
+    transition: 1s;
+    font-size: 30pt;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 0 76%, 0 20%);
+    width: 40px;
+    height: 100%;
+    float: right;
+}
+input:hover#prox{
+    transition: 1s;
+    font-size: 30pt;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 280px;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 35% 100%, 0 76%, 0 20%);
+}
+
+input#ant{
+    transition: 1s;
+    font-size: 30pt;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    clip-path: polygon(0 0, 100% 23%, 100% 76%, 0 100%, 0 100%, 0 0);
+    width: 40px;
+    height: 100%;
+    float: left;
+}
+input:hover#ant{
+    transition: 1s;
+    font-size: 30pt;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 180px;
+    clip-path: polygon(65% 0, 100% 25%, 100% 75%, 65% 100%, 0 100%, 0 0);
 }
